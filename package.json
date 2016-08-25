@@ -1,0 +1,24 @@
+{
+  "name": "browser-scss",
+  "version": "1.0.0",
+  "description": "Compile text/scss style tags in the browser",
+  "main": "browser-scss.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myrcutio/browser-scss.git"
+  },
+  "keywords": [
+    "sass",
+    "scss",
+    "browser"
+  ],
+  "author": "Ben Balentine",
+  "license": "GNU GPL v3",
+  "bugs": {
+    "url": "https://github.com/myrcutio/browser-scss/issues"
+  },
+  "homepage": "https://github.com/myrcutio/browser-scss#readme"
+}
