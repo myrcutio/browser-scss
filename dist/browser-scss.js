@@ -7,7 +7,7 @@ function findAndConvertTags() {
 			Sass.compile(sassTags[i].innerHTML, function(compiledCSS){
 				var rawStyle = document.createElement('style');
 				rawStyle.type = 'text/css';
-				rawStyle.innerHTML = compiledCSS;
+				rawStyle.innerHTML = compiledCSS.text;
 				document.head.appendChild(rawStyle);
 			});
 		}
