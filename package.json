@@ -1,6 +1,6 @@
 {
   "name": "browser-scss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Compile text/scss style tags in the browser",
   "main": "dist/browser-scss.js",
   "scripts": {
