@@ -1,0 +1,60 @@
+<html>
+
+<head>
+	<title>Example with React, Babel, and Sass</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.0/react.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react/15.3.0/react-dom.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/0.30.2/react-bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.12.0/babel.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.12/sass.sync.min.js"></script>
+	<script type="text/javascript" src="../dist/browser-scss.min.js"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap-theme.min.css">
+	<style type="text/scss">
+		.show-grid [class^=col-] {
+			padding-top: 10px;
+			padding-bottom: 10px;
+			background-color: #eee;
+			background-color: rgba(86,61,124,.15);
+			border: 1px solid #ddd;
+			border: 1px solid rgba(86,61,124,.2);
+			&:hover {
+				background-color: #eef;
+			}
+		}
+	</style>
+
+	<style type="text/scss">
+		.test {
+			border: 1px solid black;
+			&:hover {
+				border: 1px solid gray;
+			}
+		}
+	</style>
+	<script type="text/babel">
+		let { Col, Row } = ReactBootstrap;
+
+		class ReactWrapper extends React.Component { constructor(props) { super(props); this.state = {}; } 
+
+		render() { return (
+		<div>
+			<div>Should have a styled hover-state</div>
+			<Row className="show-grid">
+				<Col xs={6} md={4}>Hover Style Block 1</Col>
+				<Col xs={6} md={4}>Hover Style Block 2</Col>
+				<Col xs={6} md={4}>Hover Style Block 3</Col>
+			</Row>
+		</div>
+		); } } ReactDOM.render(<ReactWrapper/>, document.querySelector('#test'));
+	</script>
+</head>
+
+<body>
+	<div id="test"></div>
+</body>
+
+</html>

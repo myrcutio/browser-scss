@@ -1,12 +1,14 @@
 # browser-scss
 Compile text/scss style tags in the browser with sass.js
 
-Installation: 
+#Installation: 
 ```
-<script type="text/javascript" src="browser-scss.min.js"></script>
+<script type="text/javascript" src="dist/browser-scss.min.js"></script>
 ```
+Note that this will load sass.sync.min.js from cloudflare's CDN if not already present.
+(https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.12/sass.sync.min.js)
 
-Example usage: 
+#Example usage: 
 ```
 <style type="text/scss">
 	.button {
