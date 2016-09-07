@@ -1,0 +1,27 @@
+<html>
+
+<head>
+	<title>Example with Babel and Sass</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.12.0/babel.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.12/sass.sync.min.js"></script>
+	<script type="text/javascript" src="../dist/browser-scss.min.js"></script>
+
+	<style type="text/scss">
+		$primary-color: #F00;
+		#test {
+			color: $primary-color;
+		}
+	</style>
+	<script type="text/babel">
+		const testLabel = "Babel supplied header";
+		document.querySelector('#test').innerHTML = testLabel;
+	</script>
+</head>
+
+<body>
+	<div id="test"></div>
+</body>
+
+</html>
